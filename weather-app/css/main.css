@@ -1,0 +1,133 @@
+@import url("./reset.css");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+/* * {
+    border: 1px solid black;
+} */
+
+body {
+    /* min-height: 100vh; */
+    background-color: #282828;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+}
+
+input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+input,
+textarea,
+button,
+select {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+aside,
+nav,
+footer,
+header,
+section,
+main {
+    display: block;
+}
+
+.weather {
+    background: linear-gradient(167deg, #42d2a6 4.7%, #007991 95.98%), #389196;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 20px;
+    text-align: center;
+
+    position: absolute;
+    width: 320px;
+}
+
+.weather__main {
+    margin-bottom: 60px;
+}
+
+.weather__temp {
+    font-size: 56px;
+    font-weight: bold;
+}
+
+.weather__city {
+    font-size: 38px;
+    font-weight: 500;
+}
+
+.weather__footer {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+.weather__img {
+    width: 128px;
+    /* height: 101px; */
+    margin-bottom: 15px;
+}
+
+.form {
+    width: 280px;
+    height: 40px;
+    margin-bottom: 20px;
+
+    display: flex;
+    align-items: center;
+
+    background-color: white;
+    border-radius: 60px;
+}
+.form__input {
+    color: black;
+    flex-grow: 1;
+    padding-left: 20px;
+}
+
+.form__input::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+}
+.form__btn {
+    padding: 8px;
+}
+
+.details {
+    display: flex;
+    gap: 10px;
+}
+
+.details img {
+    width: 36px;
+    height: 36px;
+}
+
+.details__text {
+    font-weight: 200;
+    text-align: left;
+}
+.details__value {
+    font-size: 20px;
+}
+.details__title {
+    font-size: 14px;
+}
